@@ -1,0 +1,12 @@
+<div class="container-fluid mt-3 mb-3">
+    <div class="d-flex align-items-start">
+        <div class="nav flex-column nav-pills me-3">
+            <button class="nav-link" type="button" [routerLink]="[ 'category' ]" routerLinkActive="active">Category</button>
+            <button class="nav-link" type="button" [routerLink]="[ 'products' ]" routerLinkActive="active">Products</button>
+            <button class="nav-link" type="button" [routerLink]="[ 'orders' ]" routerLinkActive="active">Orders</button>
+        </div>
+        <div class="tab-content">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>

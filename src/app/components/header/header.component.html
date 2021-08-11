@@ -1,1 +1,59 @@
-<p>header works!</p>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" [routerLink]="['']">SushiKing</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="[ '']" routerLinkActive="active">Головна</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="[ '/products', 'roly' ]" routerLinkActive="active">Роли</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="[ '/products', 'haryachi-roly' ]" routerLinkActive="active">Гарячі Роли</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="[ '/products', 'maki' ]" routerLinkActive="active">Maki</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="[ '/products', 'sushi' ]" routerLinkActive="active">Суші</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="[ '/products', 'asorti' ]" routerLinkActive="active">Асорті</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="[ '/products', 'lokshyny' ]" routerLinkActive="active">Локшини</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="[ '/products', 'kuhnya' ]" routerLinkActive="active">Кухня</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="[ '/products', 'salaty' ]" routerLinkActive="active">Салати</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="[ '/products', 'supy' ]" routerLinkActive="active">Супи</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="[ '/products', 'napoyi' ]" routerLinkActive="active">Напої</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="[ '/products', 'sertyfikaty' ]" routerLinkActive="active">Сертифікати</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="[ '/basket' ]" routerLinkActive="active">Кошик</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="[ '/payment' ]" routerLinkActive="active">Оплата</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="[ '/admin' ]" routerLinkActive="active">Admin</a>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</nav>

@@ -10,6 +10,10 @@ import { ProductsComponent } from './pages/products/products.component';
 import { ProductDetailsComponent } from './pages/product-details/product-details.component';
 import { BasketComponent } from './pages/basket/basket.component';
 import { PaymentComponent } from './pages/payment/payment.component';
+import { AdminComponent } from './admin/admin.component';
+import { AdminCategoryComponent } from './admin/admin-category/admin-category.component';
+import { AdminProductsComponent } from './admin/admin-products/admin-products.component';
+import { AdminOrdersComponent } from './admin/admin-orders/admin-orders.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +24,11 @@ import { PaymentComponent } from './pages/payment/payment.component';
     ProductsComponent,
     ProductDetailsComponent,
     BasketComponent,
-    PaymentComponent
+    PaymentComponent,
+    AdminComponent,
+    AdminCategoryComponent,
+    AdminProductsComponent,
+    AdminOrdersComponent
   ],
   imports: [
     BrowserModule,
