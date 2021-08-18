@@ -71,7 +71,46 @@
   <div class="top-bar">
     <ul class="text-bar">
       <li class="min-sum">Мінімальна сума замовлення 300грн</li>
-      <li></li>
+      <li class="order-condition">
+        <a class="order-condition-link" [routerLink]="[ '/order-condition' ]">Умови доставки</a>
+      </li>
+      <li class="news-and-dicsounts">
+        <a class="news-and-discounts-link" [routerLink]="[ '/news-and-discounts' ]">Новини та акції</a>
+      </li>
     </ul>
+    <div class="header-main">
+      <div class="inner-header-wrapper">
+        <div class="logo">
+          <a class="logo-home-link" [routerLink]="[ '/' ]">
+            <img width="499" height="100"
+              src="https://sp-ao.shortpixel.ai/client/q_glossy,ret_img,w_499,h_100/https://sushiking.com.ua/wp-content/uploads/2020/05/logo-banner-1.png"
+              class="header_logo header-logo" alt="Доставка суші у Львові / Sushi King"><img width="499" height="100"
+              src="https://sp-ao.shortpixel.ai/client/q_glossy,ret_img,w_499,h_100/https://sushiking.com.ua/wp-content/uploads/2020/05/logo-banner-1.png"
+              class="header-logo-dark" alt="Доставка суші у Львові / Sushi King">
+          </a>
+        </div>
+        <div class="telNumbers-and-addresses">
+          <ul class="telNumbers">
+            <li class="telNumber">
+              <a href="+380679398488" class="telNum">+38(067)939-84-88</a>
+            </li>
+            <li class="telNumber">
+              <a href="+380939398488" class="telNum">+38(093)939-84-88</a>
+            </li>
+          </ul>
+          <ul class="addresses">
+            <li class="address">
+              <a class="link-address" [routerLink]="[ '/contacts']">м.Львів вул. Малоголосківська 8Д</a>
+            </li>
+            <li class="address">
+              <a class="link-address" [routerLink]="[ '/contacts']">м.Львів вул. Стрийська 45А⭐</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="info-box"></div>
+    </div>
   </div>
+
 </div>
+
