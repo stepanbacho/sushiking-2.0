@@ -10,6 +10,11 @@ import { ProductsComponent } from './pages/products/products.component';
 import { ProductDetailsComponent } from './pages/product-details/product-details.component';
 import { BasketComponent } from './pages/basket/basket.component';
 import { PaymentComponent } from './pages/payment/payment.component';
+import { OrderConditionComponent } from './pages/order-condition/order-condition.component';
+import { NewsAndDiscountsComponent } from './pages/news-and-discounts/news-and-discounts.component';
+import { AboutUsComponent } from './pages/about-us/about-us.component';
+import { OfferAgreementComponent } from './pages/offer-agreement/offer-agreement.component';
+import { ContactsComponent } from './pages/contacts/contacts.component';
 import { AdminComponent } from './admin/admin.component';
 import { AdminCategoryComponent } from './admin/admin-category/admin-category.component';
 import { AdminProductsComponent } from './admin/admin-products/admin-products.component';
@@ -25,10 +30,15 @@ import { AdminOrdersComponent } from './admin/admin-orders/admin-orders.componen
     ProductDetailsComponent,
     BasketComponent,
     PaymentComponent,
+    OrderConditionComponent,
+    NewsAndDiscountsComponent,
+    AboutUsComponent,
+    OfferAgreementComponent,
+    ContactsComponent,
     AdminComponent,
     AdminCategoryComponent,
     AdminProductsComponent,
-    AdminOrdersComponent
+    AdminOrdersComponent,
   ],
   imports: [
     BrowserModule,
