@@ -1,3 +1,14 @@
-@mixin flexbox() {
+@mixin flexBox($js, $ai, ) {
+    display: flex;
+    justify-content: $js;
+    align-items: $ai;
+}
+
+@mixin flexBlock ($js, $ai, $fd, $fw) {
+    display: flex;
+    justify-content: $js;
+    align-items: $ai;
+    flex-direction: $fd;
+    flex-wrap: $fw;
     
 }
