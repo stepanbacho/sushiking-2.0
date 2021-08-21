@@ -14,7 +14,6 @@
 .top-bar {
   width: 1080px;
   min-height: 30px;
-  border: 1px solid #000;
   margin: 0 auto;
   @include flexBox(flex-end, center);
 }
@@ -22,7 +21,6 @@
 .text-bar {
   min-width: 456px;
   height: 30px;
-  border: 1px solid #000;
   @include flexBox(space-evenly, stretch);
 }
 
@@ -50,7 +48,7 @@
 
 .order-condition-link:hover {
   cursor: pointer;
-  color: red;
+  color: $hover1;
 }
 
 .news-and-discounts-link {
@@ -61,7 +59,7 @@
 
 .news-and-discounts-link:hover {
   cursor: pointer;
-  color: red;
+  color: $hover1;
 }
 
 .order-condition-link::before {
@@ -91,11 +89,10 @@
   height: 100px;
 }
 
-.inner-header-wrapper {
+.inner-header-main-wrapper {
   width: 1080px;
   height: inherit;
   margin: 0 auto;
-  border: 1px solid #000;
   @include flexBox (space-between, stretch)
 }
 
@@ -107,7 +104,6 @@
 .telNumbers-and-addresses {
   width: 290px;
   min-height: 67px;
-  // border: 1px solid #000;
 }
 
 .telNumbers {
@@ -119,7 +115,6 @@
 
 .telNumber {
   list-style-type: none;
-  // border: 1px solid #000;
   width: 140px;
 }
 
@@ -130,13 +125,12 @@
 }
 
 .telNum:hover {
-  color: red;
+  color: $hover1;
 }
 
 .addresses {
   width: inherit;
   min-height: 60px;
-  // border: 1px solid #000;
   padding-top: 8px;
 }
 
@@ -146,31 +140,74 @@
 }
 
 .link-address {
-
   text-decoration: none;
   color: #fff;
   transition: 0.3s;
 }
 
 .link-address:hover {
-  color: red;
+  color: $hover1;
 }
 
 .info-box {
   width: 260px;
   min-height: 100px;
-  border: 1px solid #000;
+  @include flexBox(space-around, center)
 }
 
 .contact-btn {
-    height: inherit;
-    border: 1px solid #000;
+  height: inherit;
+  width: 140px;
 }
 
 .btn-outline-light {
-  border-radius: 99px;
+  border-radius: 80px;
   padding: 5px 10px;
   border-width: 2px;
+  font-size: 0.8em;
+}
+
+.socmedia-links {
+  height: inherit;
+  width: 50px;
+  @include flexBox(space-around, center)
+}
+
+.uil-instagram {
+  color: #fff;
+  font-size: 23px;
+  transition: 0.3s;
+}
+
+.uil-instagram:hover {
+  color: $hover1;
+}
+
+.uil-facebook-f {
+  color: #fff;
+  font-size: 23px;
+  transition: 0.3s;
+}
+
+.uil-facebook-f:hover {
+  color: $hover1;
+}
+
+.user-btn {
+  background: #000;
+  color: red;
+  border-width: 0;
+  width: 40px;
+  height: 40px;
+}
+
+.uil-user-circle {
+  font-size: 28px;
+  transition: 0.3s;
+}
+
+.uil-user-circle:hover {
+  color: $hover1;
 }
 
 
