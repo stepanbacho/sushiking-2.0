@@ -22,14 +22,11 @@ const routes: Routes = [
   { path: 'products/:categoty/:name', component: ProductDetailsComponent },
   { path: 'basket', component: BasketComponent },
   { path: 'payment', component: PaymentComponent },
-  { path: 'order-condition', component: OrderConditionComponent },
+  { path: 'order-conditions', component: OrderConditionComponent },
   { path: 'news-and-discounts', component: NewsAndDiscountsComponent },
   { path: 'about-us', component: AboutUsComponent },
   { path: 'contacts', component: ContactsComponent },
   { path: 'offer-agreement', component: OfferAgreementComponent },
-  
-
-
   {
     path: 'admin', component: AdminComponent, children: [
       { path: '',  pathMatch: 'full', redirectTo: 'category'},

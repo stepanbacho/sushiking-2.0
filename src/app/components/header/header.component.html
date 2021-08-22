@@ -1,158 +1,111 @@
-<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <img width="499" height="100"
-      src="https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_499,h_100/https://sushiking.com.ua/wp-content/uploads/2020/05/logo-banner-1.png"
-      class="header_logo header-logo" alt="Доставка суші у Львові / Sushi King">
-
-    <a class="navbar-brand" [routerLink]="['']">SushiKing</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" [routerLink]="[ '']" routerLinkActive="active">Головна</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" [routerLink]="[ '/products', 'roly' ]" routerLinkActive="active">Роли</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" [routerLink]="[ '/products', 'haryachi-roly' ]" routerLinkActive="active">Гарячі Роли</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" [routerLink]="[ '/products', 'maki' ]" routerLinkActive="active">Maki</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" [routerLink]="[ '/products', 'sushi' ]" routerLinkActive="active">Суші</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" [routerLink]="[ '/products', 'asorti' ]" routerLinkActive="active">Асорті</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" [routerLink]="[ '/products', 'lokshyny' ]" routerLinkActive="active">Локшини</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" [routerLink]="[ '/products', 'kuhnya' ]" routerLinkActive="active">Кухня</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" [routerLink]="[ '/products', 'salaty' ]" routerLinkActive="active">Салати</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" [routerLink]="[ '/products', 'supy' ]" routerLinkActive="active">Супи</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" [routerLink]="[ '/products', 'napoyi' ]" routerLinkActive="active">Напої</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" [routerLink]="[ '/products', 'sertyfikaty' ]" routerLinkActive="active">Сертифікати</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" [routerLink]="[ '/basket' ]" routerLinkActive="active">Кошик</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" [routerLink]="[ '/payment' ]" routerLinkActive="active">Оплата</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" [routerLink]="[ '/admin' ]" routerLinkActive="active">Admin</a>
-        </li>
-      </ul>
-      <div class="social-icons follow-icons"><a href="https://www.facebook.com/SushiKingLviv/" target="_blank"
-          data-label="Facebook" rel="noopener noreferrer nofollow" class="icon plain facebook tooltip tooltipstered"><i
-            class="icon-facebook"></i></a><a href="https://www.instagram.com/sushiking_lviv/" target="_blank"
-          rel="noopener noreferrer nofollow" data-label="Instagram"
-          class="icon plain  instagram tooltip tooltipstered"><i class="icon-instagram"></i></a></div>
-
-    </div>
-  </div>
-</nav> -->
 <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-<div class="header-wrapper">
-  <div class="top-bar">
-    <ul class="text-bar">
-      <li class="top-bar-items">
-        <p class="min-sum">Мінімальна сума замовлення 300грн</p>
-      </li>
-      <li class="order-condition top-bar-items">
-        <a class="top-bar-links order-condition-link" [routerLink]="[ '/order-condition' ]">Умови доставки</a>
-      </li>
-      <li class="news-and-dicsounts top-bar-items">
-        <a class="top-bar-links news-and-discounts-link" [routerLink]="[ '/news-and-discounts' ]">Новини та акції</a>
-      </li>
 
-    </ul>
-  </div>
-  <div class="header-main">
-    <div class="inner-header-main-wrapper">
-      <div class="logo">
-        <a class="logo-home-link" [routerLink]="[ '/' ]">
-          <img width="499" height="100"
-            src="https://sp-ao.shortpixel.ai/client/q_glossy,ret_img,w_499,h_100/https://sushiking.com.ua/wp-content/uploads/2020/05/logo-banner-1.png"
-            class="header_logo header-logo" alt="Доставка суші у Львові / Sushi King">
-        </a>
-      </div>
-      <div class="telNumbers-and-addresses">
-        <ul class="telNumbers">
-          <li class="telNumber">
-            <a href="+380679398488" class="telNum">+38(067)939-84-88</a>
-          </li>
-          <li class="telNumber">
-            <a href="+380939398488" class="telNum">+38(093)939-84-88</a>
-          </li>
-        </ul>
-        <ul class="addresses">
-          <li class="address">
-            <a class="link-address" [routerLink]="[ '/contacts']">м.Львів вул. Малоголосківська 8Д
-            </a>
-          </li>
-          <li class="address">
-            <a class="link-address" [routerLink]="[ '/contacts']">м.Львів вул. Стрийська 45А⭐
-
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="info-box">
-        <div id="personal-contact" class="contact-btn">
-          <button type="button" class="btn btn-outline-light">Передзвоніть мені</button>
-        </div>
-        <div class="socmedia-links">
-          <div class="insta-container">
-            <a href="https://www.instagram.com/sushiking_lviv/" class="insta-link" target="_blank">
-              <i class="uil uil-instagram"></i>
-            </a>
-          </div>
-          <div class="faceb-container">
-            <a href="https://www.facebook.com/SushiKingLviv/" class="faceb-link" target="_blank">
-              <i class="uil uil-facebook-f"></i>
-            </a>
-          </div>
-        </div>
-        <div class="account-container">
-          <button class="user-btn">
-            <i class="uil uil-user-circle"></i>
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="nav-bar">
-    <div class="nav-wrapper">
-      <ul class="nav-links">
-        <li class="nav-item"><a class="nav-link"></a></li>
-        <li class="nav-item"><a class="nav-link"></a></li>
-        <li class="nav-item"><a class="nav-link"></a></li>
-        <li class="nav-item"><a class="nav-link"></a></li>
-        <li class="nav-item"><a class="nav-link"></a></li>
-        <li class="nav-item"><a class="nav-link"></a></li>
-        <li class="nav-item"><a class="nav-link"></a></li>
-        <li class="nav-item"><a class="nav-link"></a></li>
-        <li class="nav-item"><a class="nav-link"></a></li>
-        <li class="nav-item"><a class="nav-link"></a></li>
-        <li class="nav-item"><a class="nav-link"></a></li>
-        <li class="nav-item"><a class="nav-link"></a></li>
-        <li class="nav-item"><a class="nav-link"></a></li>
+  <div class="header-wrapper">
+    <div class="top-bar">
+      <ul class="text-bar">
+        <li class="top-bar-items">
+          <p class="min-sum">Мінімальна сума замовлення 300грн</p>
+        </li>
+        <li class="order-condition top-bar-items">
+          <a class="top-bar-links order-condition-link" [routerLink]="[ '/order-condition' ]">Умови доставки</a>
+        </li>
+        <li class="news-and-dicsounts top-bar-items">
+          <a class="top-bar-links news-and-discounts-link" [routerLink]="[ '/news-and-discounts' ]">Новини та акції</a>
+        </li>
+  
       </ul>
     </div>
+    <div class="header-main">
+      <div class="inner-header-main-wrapper">
+        <div class="logo">
+          <a class="logo-home-link" [routerLink]="[ '/' ]">
+            <img width="499" height="100"
+              src="https://sp-ao.shortpixel.ai/client/q_glossy,ret_img,w_499,h_100/https://sushiking.com.ua/wp-content/uploads/2020/05/logo-banner-1.png"
+              class="header_logo header-logo" alt="Доставка суші у Львові / Sushi King">
+          </a>
+        </div>
+        <div class="telNumbers-and-addresses">
+          <ul class="telNumbers">
+            <li class="telNumber">
+              <a href="+380679398488" class="telNum">+38(067)939-84-88</a>
+            </li>
+            <li class="telNumber">
+              <a href="+380939398488" class="telNum">+38(093)939-84-88</a>
+            </li>
+          </ul>
+          <ul class="addresses">
+            <li class="address">
+              <a class="link-address" [routerLink]="[ '/contacts']">м.Львів вул. Малоголосківська 8Д
+              </a>
+            </li>
+            <li class="address">
+              <a class="link-address" [routerLink]="[ '/contacts']">м.Львів вул. Стрийська 45А⭐
+  
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="info-box">
+          <div id="personal-contact" class="contact-btn">
+            <button type="button" class="btn btn-outline-light">Передзвоніть мені</button>
+          </div>
+          <div class="socmedia-links">
+            <div class="insta-container">
+              <a href="https://www.instagram.com/sushiking_lviv/" class="insta-link" target="_blank">
+                <i class="uil uil-instagram"></i>
+              </a>
+            </div>
+            <div class="faceb-container">
+              <a href="https://www.facebook.com/SushiKingLviv/" class="faceb-link" target="_blank">
+                <i class="uil uil-facebook-f"></i>
+              </a>
+            </div>
+          </div>
+          <div class="account-container">
+            <button class="user-btn">
+              <i class="uil uil-user-circle"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="nav-bar">
+      <div class="nav-wrapper">
+        <ul class="nav-links">
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['']" >
+              Головна
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="[ '/products', 'roly' ]" routerLinkActive="active">
+              Роли
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="[ '/products', 'haryachi-roly' ]" routerLinkActive="active">
+              Гарячі Роли
+            </a>
+          </li>
+          <li class="nav-item"><a class="nav-link" [routerLink]="[ '/products', 'maki' ]"
+              routerLinkActive="active">Макі</a></li>
+          <li class="nav-item"><a class="nav-link" [routerLink]="[ '/products', 'sushi' ]"
+              routerLinkActive="active">Суші</a></li>
+          <li class="nav-item"><a class="nav-link" [routerLink]="[ '/products', 'asorti' ]"
+              routerLinkActive="active">Асорті</a></li>
+          <li class="nav-item"><a class="nav-link" [routerLink]="[ '/products', 'lokshyny' ]"
+              routerLinkActive="active">Локшини</a></li>
+          <li class="nav-item"><a class="nav-link" [routerLink]="[ '/products', 'kuhnya' ]"
+              routerLinkActive="active">Кухня</a></li>
+          <li class="nav-item"><a class="nav-link" [routerLink]="[ '/products', 'salaty' ]"
+              routerLinkActive="active">Салати</a></li>
+          <li class="nav-item"><a class="nav-link" [routerLink]="[ '/products', 'supy' ]"
+              routerLinkActive="active">Супи</a></li>
+          <li class="nav-item"><a class="nav-link" [routerLink]="[ '/products', 'napoyi' ]"
+              routerLinkActive="active">Напої</a></li>
+          <li class="nav-item"><a class="nav-link" [routerLink]="[ '/products', 'sertyfikaty' ]"
+              routerLinkActive="active">Сертифікати </a></li>
+        </ul>
+      </div>
+    </div>
   </div>
-</div>
