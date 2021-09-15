@@ -1,0 +1,63 @@
+@import '../../../assets/styles/variables';
+@import '../../../assets/styles/mixins';
+@import '../../../assets/styles/reset';
+
+.main-container {
+  width: 100%;
+  min-height: 300px;
+  background: black;
+  padding-top: 50px;
+  padding-bottom: 75px;
+}
+
+.main-wrapper {
+  width: 1080px;
+  min-height: 300px;
+  margin: 0 auto;
+}
+
+.title {
+  margin-bottom: 50px;
+  color: $text2;
+}
+
+.conditions>h3 {
+  color: $text2;
+}
+
+.h3-last {
+  margin-bottom: 40px;
+}
+
+.service-sent {
+  margin-bottom: 30px;
+  color: $text2;
+}
+
+.cities {
+  color: $text2;
+  margin-bottom: 30px;
+}
+
+ul {
+  margin-bottom: 1.3em;
+  margin-left: 1.3em;
+}
+
+li {
+  margin-bottom: .6em;
+  line-height: 1.6;
+  color: $text2;
+}
+
+.order-map {
+  width: 1045px;
+  height: 490px;
+  margin-bottom: 50px;
+}
+
+.order-map>img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}

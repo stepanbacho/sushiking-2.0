@@ -1,0 +1,67 @@
+@import '../../../assets/styles/variables';
+@import '../../../assets/styles/mixins';
+@import '../../../assets/styles/reset';
+.main-container{
+    // margin-top: 210px;
+    width: 100%;
+    min-height:500px;
+    // border: 10px solid rgb(241, 6, 6);
+    background: black;
+    @include flexBox(center,flex-start);
+    
+}
+.main-wrapper{
+    width: 1080px;
+    min-height: 100px;
+    border: 1px solid #000;
+    @include flexBlock(flex-start, center, column, nowrap);
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+.title-text{
+    width: 60%;
+    min-height: 100px;
+    border: 1px solid #000;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.title{
+    text-transform: uppercase;
+    color:$text2;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.title-descrription{
+    color:$text2;
+    text-align: center;
+    font-size: 1.3em;
+    line-height: 1.6;
+
+}
+.text-main{
+    width: 1080px;
+    min-height: 300px;
+}
+.text-center{
+    text-align: center;
+    font-size: 1.3em;
+    color: $text2;
+    margin-bottom: 30px;
+}
+.explain-text{
+    margin-left: 1.3em;
+    color: $text2;
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+.explain-list{
+    margin-bottom: .6em;
+}
+.invitation-text{
+    font-size: 1.3em;
+    color: $text2;
+    font-size: 1.2em;
+}
