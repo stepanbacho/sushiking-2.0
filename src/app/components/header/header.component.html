@@ -1,5 +1,4 @@
-<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-
+<header class="navbar" [ngClass]="{'navbar-fixed': isFixedNavbar}">
   <div class="header-wrapper">
     <div class="top-bar">
       <ul class="text-bar">
@@ -7,7 +6,7 @@
           <p class="min-sum">Мінімальна сума замовлення 300грн</p>
         </li>
         <li class="order-condition top-bar-items">
-          <a class="top-bar-links order-condition-link" [routerLink]="[ '/order-condition' ]">Умови доставки</a>
+          <a class="top-bar-links order-condition-link" [routerLink]="[ '/order-conditions' ]">Умови доставки</a>
         </li>
         <li class="news-and-dicsounts top-bar-items">
           <a class="top-bar-links news-and-discounts-link" [routerLink]="[ '/news-and-discounts' ]">Новини та акції</a>
@@ -109,3 +108,4 @@
       </div>
     </div>
   </div>
+</header>

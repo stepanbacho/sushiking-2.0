@@ -8,7 +8,7 @@
     // border: 10px solid rgb(241, 6, 6);
     background: black;
     @include flexBox(center,flex-start);
-    
+    padding-top: 210px;
 }
 .main-wrapper{
     width: 1080px;

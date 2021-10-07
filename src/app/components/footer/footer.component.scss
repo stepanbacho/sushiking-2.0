@@ -6,19 +6,24 @@
   width: 100%;
   min-height: 300px;
   background: #3e0303;
-  display: flex;
-  justify-content: center;
+  border-top: 1px solid black;
 }
 
 .footer-main {
+  margin: 30px auto 0;
   width: 1080px;
-  margin-top: 30px;
   @include flexBox(center, flex-start);
+}
+.nav-menu-wrapper{
+  width: 502px;
+  min-height: 250px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .nav-menu {
-  width: calc(1080px/4);
-  min-height: 220px;
+  width: 250px;
+  min-height: 250px;
   padding-left: 15px;
   padding-right: 10px;
 }
@@ -66,13 +71,15 @@
 
 .socmedia-icons {
   width: 150px;
-  min-height: 140px;
+  min-height: 80px;
+  margin-top: 10px;
+  @include flexBox(flex-start,flex-start)
 }
 
 .socmedia-smcontainer {
   width: 90px;
-  min-height: 50px;
-  @include flexBox(flex-start, center);
+  height: 50px;
+  @include flexBox(center, center);
 }
 
 .socmedia-button {
@@ -127,7 +134,8 @@
 .absolute-wrapper{
     width: 1080px;
     height: 25px;
-    @include flexBox(space-between,center)
+    @include flexBox(space-between,center);
+    padding: 0 35px 0 35px;
 }
 .footer-primary{
     padding-left: 15px;
@@ -149,3 +157,76 @@
 .web-dev>a:hover{
     color: #fff;
 }
+@media screen and(max-width:1090px) {
+  .footer-main{
+    width: inherit;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap;
+  }
+  .nav-menu-wrapper{
+    width: inherit;
+    min-height: 180px;
+    padding: 0 30px 0 30px;
+  }
+  .nav-menu{
+    min-height: 180px;
+    margin-bottom: 20px;
+  }
+  .absolute-footer{
+    min-height: 75px;
+  }
+  .absolute-wrapper{
+    width: inherit;
+    min-height: 53px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: wrap;
+  }
+  .footer-primary{
+    height: 25px;
+    width: 310px;
+  }
+  .footer-secondary{
+    height: 25px;
+    width: 310px;
+    text-align: center;
+    padding-left: 15px;
+  }
+  
+}
+@media screen and (max-width:580px) {
+  .nav-menu-wrapper{
+    width: 300px;
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: wrap;
+  }
+  .nav-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+  }
+  .nav-menu>span{
+    text-align: center;
+  }
+  .small-divider{
+    align-self: center;
+  }
+  .footer-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 90px;
+  }
+  .socmedia-icons{
+    @include flexBox(center,flex-start);
+  }
+ 
+
+}
+
